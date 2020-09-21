@@ -1,17 +1,65 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<!-- <ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title>
+            Tab 2
+        </ion-title>
+    </ion-toolbar>
+</ion-header> -->
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-card color="primary">
+        <ion-card-header>
+            <ion-card-title>التقيمات</ion-card-title>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+            <p class="ion-text-center">تقيمك الحالي</p>
+            <p class="ion-text-center p">
+                <b>4.44</b>
+                <ion-icon color="success" name="star"></ion-icon>
+            </p>
+
+        </ion-card-header>
+        <ion-card-content>
+
+
+            <!-- <ion-item color="primary"> -->
+
+            <div slot="start">
+                <p>5</p>
+                <ion-icon color="success" name="star"></ion-icon>
+                <ion-progress-bar color="success" value="0.5" size="50"></ion-progress-bar>
+            </div>
+
+
+            <div slot="start">
+                <p>4</p>
+                <ion-icon color="success" name="star"></ion-icon>
+                <ion-progress-bar color="success" value="0.8" size="50"></ion-progress-bar>
+            </div>
+
+
+            <div slot="start">
+                <p>3</p>
+                <ion-icon color="success" name="star"></ion-icon>
+                <ion-progress-bar color="success" value="0.3" size="50"></ion-progress-bar>
+            </div>
+
+
+            <div slot="start">
+                <p>2</p>
+                <ion-icon color="success" name="star"></ion-icon>
+                <ion-progress-bar color="success" value="0.1" size="50"></ion-progress-bar>
+            </div>
+
+
+            <div slot="start">
+                <p>1</p>
+                <ion-icon color="success" name="star"></ion-icon>
+                <ion-progress-bar color="success" value=".1"></ion-progress-bar>
+            </div>
+        </ion-card-content>
+
+        <ion-button class="button" shape="round" color="light">قراءة جميع التقيمات</ion-button>
+
+    </ion-card>
+
 </ion-content>

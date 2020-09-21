@@ -1,0 +1,90 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title class="ion-text-center">
+            تفاصيل الطلب</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+        <ion-card-header>
+            <!-- <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
+    <ion-card-title>Awesome Title</ion-card-title> -->
+            <ion-segment scrollable="true" mode="ios" [(ngModel)]="tabButton">
+
+                <ion-segment-button value="main">
+                    <ion-label>معلومات</ion-label>
+                </ion-segment-button>
+                <ion-segment-button value="problem">
+                    <ion-label>تفاصيل</ion-label>
+                </ion-segment-button>
+            </ion-segment>
+        </ion-card-header>
+        <ion-card-content *ngIf="sement == main">
+            <ion-item button (click)="testClick()" class="user">
+                <ion-label slot="start">
+                    <ion-avatar>
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAAAAAAALAAAAAABAAEAAAICTAEAOw==">
+                    </ion-avatar>
+                    <p>Omer Ali</p>
+                </ion-label>
+                <div slot="end">
+                    <ion-icon class="connaction" color="primary" name="call-outline"></ion-icon>
+                    &nbsp;
+                    <ion-icon class="connaction" color="primary" name="chatbubble-ellipses-sharp"></ion-icon>
+                </div>
+            </ion-item>
+            <p>المطلوب</p>
+            <h3>كهربائي</h3>
+            <ion-item>
+                <div slot="start">
+                    <p>التاريخ</p>
+                    <p>12-10-2020</p>
+                </div>
+                <div slot="end">
+                    <p>الزمن</p>
+                    <p>12:10 - 13:10</p>
+                </div>
+            </ion-item>
+            <ion-item>
+                <ion-icon name="pin" slot="start"></ion-icon>
+                <ion-label>
+                    <p>العنوان</p>
+                    <p>
+                        الجريف غرب- مربع 84
+                    </p>
+                </ion-label>
+            </ion-item>
+        </ion-card-content>
+
+        <ion-card-content *ngIf="sement == problem">
+            <p>Por</p>
+        </ion-card-content>
+
+    </ion-card>
+    <ion-button color="success" expand="full">
+        <ion-icon slot="start" name="build-outline"></ion-icon>
+    </ion-button>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-subtitle>حالة العمل</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-item lines="full" color="secondary">
+                <ion-icon name="radio-button-on-sharp" slot="start"></ion-icon>
+                <ion-label>في الطريق</ion-label>
+            </ion-item>
+            <ion-item color="medium">
+                <ion-icon name="radio-button-on-sharp" slot="start"></ion-icon>
+                <ion-label>جاري العمل</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-icon name="radio-button-on-sharp" slot="start"></ion-icon>
+                <ion-label>انجزت العمل</ion-label>
+            </ion-item>
+        </ion-card-content>
+    </ion-card>
+
+
+</ion-content>

@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title class="ion-text-center">
+            الرئيسية
+        </ion-title>
+    </ion-toolbar>
+    <ion-segment scrollable="true" mode="ios" [(ngModel)]="appoinmentbutton">
+        <ion-segment-button value="old">
+            <ion-label>المنجزة</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="new">
+            <ion-label>القادمة</ion-label>
+        </ion-segment-button>
+    </ion-segment>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-list>
+
+        <ion-item color="medium" *ngFor="let item of data">
+            <div slot="start">
+                <p>{{item.name}}</p>
+                <p> {{item.type}} </p>
+            </div>
+
+            <div slot="end">
+                <p class="ion-text-center">{{item.date}}</p>
+                <p class="ion-text-center">
+                    <ion-button color="light" href="/appoinment-details/1">عرض</ion-button>
+                </p>
+            </div>
+        </ion-item>
+    </ion-list>
+</ion-content>
