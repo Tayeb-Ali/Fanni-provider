@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppoinmentDetailsPage implements OnInit {
   tabButton = 'main';
+  data:any;
   constructor() { }
 
   ngOnInit() {
+    // this.data = [
+    //   {}
+    // ]
   }
 
   tabs(){
