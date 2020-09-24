@@ -13,7 +13,8 @@ import { AppoinmentDetailsPage } from './appoinment-details.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    AppoinmentDetailsPageRoutingModule
+    AppoinmentDetailsPageRoutingModule,
+    // ProposeComponentM
   ],
   declarations: [AppoinmentDetailsPage]
 })
