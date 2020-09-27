@@ -1,8 +1,4 @@
 .user {
-    p {
-        color: black;
-        font-size: medium;
-    }
     .connaction {
         font-size: large;
     }
@@ -11,6 +7,13 @@
     //         border: ;
     //     }
 }
+
 .icon {
     font-size: larger;
+}
+
+p,
+h3 {
+    color: black !important;
+    font-size: medium;
 }
