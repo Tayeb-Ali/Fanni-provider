@@ -5,7 +5,8 @@
 
 :root {
     /** primary **/
-    --ion-color-primary: #3880ff;
+    // --ion-color-primary: #3880ff;
+    --ion-color-primary: #2196f3;
     --ion-color-primary-rgb: 56, 128, 255;
     --ion-color-primary-contrast: #ffffff;
     --ion-color-primary-contrast-rgb: 255, 255, 255;
@@ -54,7 +55,8 @@
     --ion-color-dark-shade: #1e2023;
     --ion-color-dark-tint: #383a3e;
     /** medium **/
-    --ion-color-medium: #92949c;
+    // --ion-color-medium: #92949c;
+    --ion-color-medium: #607d8b;
     --ion-color-medium-rgb: 146, 148, 156;
     --ion-color-medium-contrast: #ffffff;
     --ion-color-medium-contrast-rgb: 255, 255, 255;
@@ -67,6 +69,8 @@
     --ion-color-light-contrast-rgb: 0, 0, 0;
     --ion-color-light-shade: #d7d8da;
     --ion-color-light-tint: #f5f6f9;
+    /** medium2 **/
+    --ion-color-medium2: #607d8b;
 }
 
 @media (prefers-color-scheme: dark) {
