@@ -7,14 +7,14 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-    <ion-item>
+    <ion-item class="animate__animated animate__backInLeft animate__delay-.2s">
         <ion-avatar slot="start">
             <img src="assets/images/profile.jpg" />
         </ion-avatar>
         <ion-label>عمر الإمين الحاج</ion-label>
     </ion-item>
 
-    <ion-list>
+    <ion-list class="animate__animated animate__backInRight animate__delay-.4s">
         <ion-item>
             <ion-icon name="document-attach-outline" color="primary" slot="start"></ion-icon>
             <ion-label>ملف</ion-label>
@@ -44,9 +44,14 @@
 
     </ion-list>
 
-    <ion-button color="light" expand="full">
-        <ion-icon color="danger" slot="start" name="log-out"></ion-icon>
-        تسجيل الخروج
-    </ion-button>
 
+
+    <ion-footer>
+        <!-- <ion-toolbar> -->
+        <ion-button class="animate__animated animate__backInLeft animate__delay-.7s" color="light" expand="full">
+            <ion-icon color="danger" slot="start" name="log-out"></ion-icon>
+            <b> تسجيل الخروج</b>
+        </ion-button>
+        <!-- </ion-toolbar> -->
+    </ion-footer>
 </ion-content>
