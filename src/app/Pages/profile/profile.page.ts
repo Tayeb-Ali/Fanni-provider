@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-profile',
@@ -7,6 +8,9 @@ import { Component } from '@angular/core';
 })
 export class ProfilePage {
 
-  constructor() {}
+  constructor(private navController: NavController) { }
 
+  logOut() {
+    this.navController.navigateForward('/login');
+  }
 }
